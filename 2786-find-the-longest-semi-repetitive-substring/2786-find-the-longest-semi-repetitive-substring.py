@@ -15,7 +15,6 @@ class Solution:
             while not _isSemiRep(string):
                 L+=1
                 string = s[L:R+1]
-            print(string)
             mx = max(R-L+1, mx)
         return 0 if mx==float('-inf') else mx
 
