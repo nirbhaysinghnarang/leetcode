@@ -8,7 +8,6 @@ class Solution:
         dirs = [(0,1),(1,0),(0,-1),(-1,0)]
 
         def dfs(x,y,vis):
-            print(x,y,vis)
             if not(0<=x<m and 0<=y<n):
                 return
             if board[x][y]!="X":
