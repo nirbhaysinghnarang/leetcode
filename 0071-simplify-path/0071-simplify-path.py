@@ -17,6 +17,5 @@ class Solution:
             
 
         st = list(filter(lambda x: x!="" and x!='.' and x!='..', st))
-        print(st)
         return '/'+'/'.join(st)
             
