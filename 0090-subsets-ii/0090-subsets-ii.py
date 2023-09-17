@@ -5,6 +5,7 @@ class Solution:
         def dfs(index, path):
             if index >= len(nums):
                 if not path in power_set:
+                    path.sort()
                     power_set.append(path.copy())
                 return
             path.append(nums[index])
