@@ -14,7 +14,5 @@ class Solution:
                     L+=1
                 max_cnt = max(max_cnt, R-L+1)
             return max_cnt
-        print(maxConsecutiveXs(answerKey, k, 'T'))
-        print(maxConsecutiveXs(answerKey, k, 'F'))
         return max(maxConsecutiveXs(answerKey, k, 'T'), maxConsecutiveXs(answerKey, k, 'F'))
 
