@@ -14,10 +14,7 @@ class Solution:
                 return prod_so_far
             neighbours = g[quot]
             visited.add(quot)
-            if(quot=="x2" and div=="x4"):
-                print(neighbours)
             for n, runner in neighbours:
-                
                 if n not in visited:
                     tmp = getValue(n, div, visited,prod_so_far*runner)
                     if tmp!=-1:
@@ -31,4 +28,3 @@ class Solution:
 
             
             
-
